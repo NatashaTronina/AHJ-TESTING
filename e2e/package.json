@@ -5,9 +5,9 @@
   "description": "",
   "main": "src/e2e.server.js",
   "scripts": {
-    "start": "jest-puppeteer-webpack/node_modules/.bin/webpack serve --mode development --port 9000",
-    "test:e2e": "jest-puppeteer-webpack/node_modules/.bin/jest",
-    "test": "jest-puppeteer-webpack/node_modules/.bin/start-server-and-test start http://localhost:9000 test:e2e"
+    "start": "webpack serve --mode development --port 9000",
+    "test:e2e": "jest",
+    "test": "start-server-and-test start http://localhost:9000 test:e2e"
   },
   "keywords": [],
   "author": "Rysaev Damir <freepad@ya.ru>",

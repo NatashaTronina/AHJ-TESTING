@@ -1,0 +1,49 @@
+{
+  "name": "ajs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "lint": "eslint .",
+    "test": "jest --testPathPatterns=./src/",
+    "coverage": "jest --testPathPatterns=./src/ --coverage",
+    "e2e": "jest --testPathPatterns=./e2e/ --runInBand",
+    "doc": "jsdoc -c jsdoc.conf.json",
+    "preshow:coverage": "npm run coverage",
+    "show:coverage": "live-server coverage/lcov-report",
+    "preshow:doc": "npm run doc",
+    "show:doc": "live-server doc",
+    "preshow:dist": "npm run build",
+    "show:dist": "live-server dist"
+  },
+  "author": "coursar",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@eslint/js": "^9.19.0",
+    "babel-jest": "^30.2.0",
+    "babel-loader": "^9.2.1",
+    "css-loader": "^6.11.0",
+    "css-minimizer-webpack-plugin": "^7.0.0",
+    "eslint": "^9.19.0",
+    "eslint-plugin-jest": "^28.11.0",
+    "globals": "^15.14.0",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.3",
+    "jest": "^30.2.0",
+    "jsdoc": "^4.0.4",
+    "live-server": "^1.2.2",
+    "mini-css-extract-plugin": "^2.9.2",
+    "terser-webpack-plugin": "^5.3.11",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.2.0",
+    "webpack-merge": "^6.0.1"
+  },
+  "dependencies": {
+    "core-js": "^3.6.4"
+  }
+}

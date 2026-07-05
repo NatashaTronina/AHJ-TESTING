@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Credit Card Validator</title>
+  </head>
+  <body>
+    <main class="validator">
+      <ul class="validator__logos" id="logos"></ul>
+
+      <form class="validator__form" id="card-form">
+        <label for="card-input">Номер карты</label>
+        <input
+          id="card-input"
+          class="validator__input"
+          type="text"
+          inputmode="numeric"
+          autocomplete="off"
+          placeholder="Введите номер карты"
+        />
+        <button type="submit" class="validator__button">Click to Validate</button>
+      </form>
+
+      <p class="validator__result" id="result"></p>
+    </main>
+  </body>
+</html>
