@@ -1,4 +1,4 @@
-import { getPaymentSystem } from './paymentSystem';
+import { getPaymentSystem } from '../js/paymentSystem';
 
 describe('getPaymentSystem', () => {
   test.each([
